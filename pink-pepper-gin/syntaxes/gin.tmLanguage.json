@@ -12,38 +12,10 @@
 			"include": "#variable"
 		},
 		{
-			"include": "#double_quoted_strings"
-		},
-		{
-			"include": "#single_quoted_strings"
-		},
-		{
 			"include": "source.python"
 		}
 	],
 	"repository": {
-		"double_quoted_strings": {
-			"name": "string.quoted.double.gin",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.gin",
-					"match": "\\\\."
-				}
-			]
-		},
-		"single_quoted_strings": {
-			"name": "string.single.gin",
-			"begin": "'",
-			"end": "'",
-			"patterns": [
-				{
-					"name": "constant.character.escape.gin",
-					"match": "\\\\."
-				}
-			]
-		},
 		"macro": {
 			"match": "(@)(.*\\(\\))?(.*)",
 			"captures": {
