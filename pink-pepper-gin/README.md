@@ -1,12 +1,11 @@
-# pink-pepper-gin README
+# pink-pepper-gin
 
 Pink pepper gin is a syntax highlighter for the python config manager gin.
 
-Discalimer: This is by no means an official package and there is no roadmap
+Disclaimer: This is by no means an official package and there is no roadmap
 for bug fixing.
 
 ## Features
-
 
 Supports basic gin config syntax:
 

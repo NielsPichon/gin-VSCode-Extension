@@ -1,6 +1,6 @@
 {
     "name": "pink-pepper-gin",
-    "displayName": "PinkPepperGin",
+    "displayName": "Gin Syntax Highlighter - PinkPepperGin",
     "description": "Add synthax highligh for gin config files",
     "version": "0.0.1",
     "engines": {
