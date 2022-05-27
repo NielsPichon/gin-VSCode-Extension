@@ -1,0 +1,30 @@
+from foo import bar as baz
+
+
+# Parameters for AdamOptimizer:
+# ==============================================================================
+AdamOptimizer.beta1 = 0.9
+AdamOptimizer.beta2 = 0.999
+AdamOptimizer.epsilon = 0.001
+AdamOptimizer.name = 'Adam'
+AdamOptimizer.use_locking = False
+
+# Parameters for exponential_decay:
+# ==============================================================================
+exponential_decay.learning_rate = 0.001
+exponential_decay.decay_steps = 72926 # blah
+exponential_decay.decay_rate = 0.92
+
+# Parameters for NetworkTrainer:
+# ==============================================================================
+NetworkTrainer.dataset = @ImageNetDataset
+NetworkTrainer.learning_rate = @exponential_decay
+NetworkTrainer.network_fn = @inception_v3
+NetworkTrainer.optimizer = @AdamOptimizer
+NetworkTrainer.train_steps = 1000000
+
+num_layers/blah/macro.value = 10
+network.num_layers = @num_layers/macro()
+
+num_layers_2 = 10
+network.num_layers = %num_layers_2

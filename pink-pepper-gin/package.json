@@ -1,0 +1,36 @@
+{
+    "name": "pink-pepper-gin",
+    "displayName": "PinkPepperGin",
+    "description": "Add synthax highligh for gin config files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "repository": "https://github.com/NielsPichon/gin-VSCode-Extension.git",
+    "publisher": "NielsPichon",
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "gin",
+                "aliases": [
+                    "gin",
+                    "gin"
+                ],
+                "extensions": [
+                    ".gin"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "gin",
+                "scopeName": "source.gin",
+                "path": "./syntaxes/gin.tmLanguage.json"
+            }
+        ]
+    }
+}
