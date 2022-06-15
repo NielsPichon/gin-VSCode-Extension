@@ -17,21 +17,19 @@ Supports basic gin config syntax:
 * macros (both using % and @) including inside brackets and/or as a
 comma-separated list.
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the
-`contributes.configuration` extension point.
-
 ## Known Issues
 
 None. If you find any, head out to the github repo and create an issue there.
 
 ## Release Notes
 
+### 0.2.0
+* Same as 0.0.2 and 0.1.0. Just a hickup in versioning with vsce
+
 ### 0.0.2
 * Add support more several `@` references in a comma separated list.
 * Fix bug where putting an `@` reference in brackets or square brackets would
-break the tokenizer .
+break the tokenizer.
 
 ### 0.0.1
 Initial release

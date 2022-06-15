@@ -13,5 +13,5 @@ To package, just head to the `pink-pepper-gin` directory and run `vsce package`.
 You can then install it with
 
 ```bash
-code --install-extension .\pink-pepper-gin-0.0.2.vsix
+code --install-extension .\pink-pepper-gin-<version>.vsix
 ```
