@@ -17,17 +17,20 @@
 	],
 	"repository": {
 		"macro": {
-			"match": "(@)(.*\\(\\))?(.*)",
+			"match": "(\\[|\\()?(@)(.*\\(\\))?(.*,)?([a-zA-Z0-9_]*)(\\]|\\))?",
 			"captures": {
-			"1": {
-				"name": "meta.preprocessor.gin"
-			},
-			"2": {
-				"name": "meta.preprocessor.gin"
-			},
-			"3": {
-				"name": "entity.name.function.gin"
-			}
+				"2": {
+					"name": "meta.preprocessor.gin"
+				},
+				"3": {
+					"name": "meta.preprocessor.gin"
+				},
+				"4": {
+					"name": "entity.name.function.gin"
+				},
+				"5": {
+					"name": "entity.name.function.gin"
+				}
 			}
 		},
 		"macro2": {
