@@ -5,6 +5,10 @@ All notable changes to the "pink-pepper-gin" extension will be documented in thi
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 
+### [0.3.1]
+
+- Fix scopes within `@` references.
+
 ### [0.3.0]
 
 - Fix failing `@` references recognition when a `.` exists un the name

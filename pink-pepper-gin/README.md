@@ -19,9 +19,15 @@ comma-separated list.
 
 ## Known Issues
 
-None. If you find any, head out to the github repo and create an issue there.
+@references within a dict spread over multiple lines don't get detected.
+
+If you find any other issue, head out to the github repo and
+create an issue there. Also feel free to create a pull request with a fix ;)
 
 ## Release Notes
+
+### 0.3.1
+*  Fix scopes with `@` references.
 
 ### 0.3.0
 *  Fix failing `@` references recognition when a `.` exists un the name
