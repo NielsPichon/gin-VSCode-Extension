@@ -23,6 +23,10 @@ None. If you find any, head out to the github repo and create an issue there.
 
 ## Release Notes
 
+### 0.3.0
+*  Fix failing `@` references recognition when a `.` exists un the name
+(typically for `@module.Object` style references).
+
 ### 0.2.0
 * Same as 0.0.2 and 0.1.0. Just a hickup in versioning with vsce
 
