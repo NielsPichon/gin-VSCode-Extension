@@ -3,6 +3,9 @@
 	"name": "gin",
 	"patterns": [
 		{
+			"include": "#include"
+		},
+		{
 			"include": "#macro"
 		},
 		{
@@ -16,6 +19,10 @@
 		}
 	],
 	"repository": {
+		"include": {
+			"match": "include ",
+			"name": "keyword.control.gin"
+		},
 		"macro": {
 			"match": "(\\[|\\()?(@)(.*\\(\\))?(.*,)?([a-zA-Z0-9_\\./]*)(\\]|\\))?",
 			"captures": {
@@ -41,10 +48,10 @@
 			"match": "([^#]*/)?([^/^#]+)(=)",
 			"captures": {
 				"1": {
-					"name": "entity.name.class"
+					"name": "entity.name.class.gin"
 				},
 				"2": {
-					"name": "variable.parameter"
+					"name": "variable.parameter.gin"
 				}
 			}
 		}

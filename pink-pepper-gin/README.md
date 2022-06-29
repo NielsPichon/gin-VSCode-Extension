@@ -26,6 +26,9 @@ create an issue there. Also feel free to create a pull request with a fix ;)
 
 ## Release Notes
 
+### 0.3.2
+* Add support for `include` statements.
+
 ### 0.3.1
 *  Fix scopes with `@` references.
 
@@ -43,4 +46,3 @@ break the tokenizer.
 
 ### 0.0.1
 Initial release
-
