@@ -24,7 +24,7 @@
 			"name": "keyword.control.gin"
 		},
 		"macro": {
-			"match": "(\\[|\\()?(@)(.*\\(\\))?(.*,)?([a-zA-Z0-9_\\./]*)(\\]|\\))?",
+			"match": "(\\[|\\()?(@)(.*\\(\\))?(.*,)?([a-zA-Z0-9_\\./]*)([\\]|\\):])?",
 			"captures": {
 				"2": {
 					"name": "meta.preprocessor.gin"
@@ -41,8 +41,12 @@
 			}
 		},
 		"macro2": {
-			"name": "meta.preprocessor.gin",
-			"match": "%.*"
+			"match": "([\\[\\(])?(%[a-zA-Z0-9]*)([,\\]|\\)])?",
+			"captures": {
+				"2": {
+					"name": "meta.preprocessor.gin"
+				}
+			}
 		},
 		"variable": {
 			"match": "([^#]*/)?([^/^#]+)(=)",

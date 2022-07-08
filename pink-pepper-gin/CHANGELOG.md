@@ -4,6 +4,10 @@ All notable changes to the "pink-pepper-gin" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+### [0.3.3]
+
+- Support for lists and tuples of `%`macros.
+
 ### [0.3.2]
 
 - Add support for `include` statements.
