@@ -1,64 +1,110 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "gin",
-	"patterns": [
-		{
-			"include": "#include"
-		},
-		{
-			"include": "#macro"
-		},
-		{
-			"include": "#macro2"
-		},
-		{
-			"include": "#variable"
-		},
-		{
-			"include": "source.python"
-		}
-	],
-	"repository": {
-		"include": {
-			"match": "include ",
-			"name": "keyword.control.gin"
-		},
-		"macro": {
-			"match": "(\\[|\\()?(@)(.*\\(\\))?(.*,)?([a-zA-Z0-9_\\./]*)([\\]|\\):])?",
-			"captures": {
-				"2": {
-					"name": "meta.preprocessor.gin"
-				},
-				"3": {
-					"name": "meta.preprocessor.gin"
-				},
-				"4": {
-					"name": "entity.name.function.gin"
-				},
-				"5": {
-					"name": "entity.name.function.gin"
-				}
-			}
-		},
-		"macro2": {
-			"match": "([\\[\\(])?(%[a-zA-Z0-9]*)([,\\]|\\)])?",
-			"captures": {
-				"2": {
-					"name": "meta.preprocessor.gin"
-				}
-			}
-		},
-		"variable": {
-			"match": "([^#]*/)?([^/^#]+)(=)",
-			"captures": {
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "gin",
+    "patterns": [
+        {
+            "include": "#include"
+        },
+        {
+            "include": "#macro"
+        },
+        {
+            "include": "#macro2"
+        },
+        {
+            "include": "#variable"
+        },
+        {
+            "include": "#string"
+        },
+        {
+            "include": "#comment"
+        },
+        {
+            "include": "#bool"
+        },
+        {
+            "include": "#numeric"
+        },
+        {
+            "include": "#dict_key"
+        }
+    ],
+    "repository": {
+        "include": {
+            "match": "(include |from |as |import )(\\w*)?",
+            "captures": {
 				"1": {
-					"name": "entity.name.class.gin"
+					"name": "keyword.control.gin"
 				},
 				"2": {
-					"name": "variable.parameter.gin"
+					"name": "entity.name.class.gin"
 				}
 			}
-		}
-	},
-	"scopeName": "source.gin"
+        },
+        "macro": {
+            "match": "(\\[|\\()?(\\s*)?(@)(.*\\(\\))?(.*,)?([\\w\\./]*)([,\\]|\\):])?",
+            "captures": {
+                "3": {
+                    "name": "meta.preprocessor.gin"
+                },
+                "4": {
+                    "name": "meta.preprocessor.gin"
+                },
+                "5": {
+                    "name": "entity.name.function.gin"
+                },
+                "6": {
+                    "name": "entity.name.function.gin"
+                }
+            }
+        },
+		"string": {
+			"match": "([\\'\"])(.*)?([\\'\"])",
+			"name":"string.quoted.gin"
+		},
+		"comment": {
+			"match": "#.*",
+			"name": "comment.line.gin"
+		},
+		"bool": {
+			"match": "(False|True)",
+			"name": "variable.language.gin"
+		},
+		"numeric": {
+			"match": "(\\d*)?(\\.)?(\\d)",
+			"name": "constant.numeric"
+		},
+        "macro2": {
+            "match": "([\\[\\(])?(\\s*)?(%\\w*)([,\\]|\\)])?",
+            "captures": {
+                "3": {
+                    "name": "meta.preprocessor.gin"
+                }
+            }
+        },
+        "variable": {
+            "match": "([^#]*/)?([^/^#]+)([=])",
+            "captures": {
+                "1": {
+                    "name": "entity.name.class.gin"
+                },
+                "2": {
+                    "name": "variable.parameter.gin"
+                }
+            }
+        },
+        "dict_key": {
+            "match": "([^#^]*/)?([^/^#^\\s]+)(:)",
+            "captures": {
+                "1": {
+                    "name": "entity.name.class.gin"
+                },
+                "2": {
+                    "name": "variable.parameter.gin"
+                }
+            }
+        }
+    },
+    "scopeName": "source.gin"
 }

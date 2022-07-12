@@ -26,6 +26,13 @@ create an issue there. Also feel free to create a pull request with a fix ;)
 
 ## Release Notes
 
+### 0.4.0
+* Revamp grammar, getting read of python bindings
+* Add support for multiline lists and tuples
+* Support spaces after parathesis and other brakets
+* color modules in imports
+* dict support including multiline ones
+
 ### 0.3.3
 * Support for lists and tuples of `%`macros.
 
