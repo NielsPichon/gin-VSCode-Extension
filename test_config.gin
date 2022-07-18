@@ -35,7 +35,8 @@ my_dict_singleline = { blah: 0, bloh: 12, @random: %whatelse}
 my_dict = {
     blah: 0,
     bloh: 12,
-    @random: %whatelse
+    @random: [%whatelse,  %whatelse],
+    @random2: %anything
 }
 
 num_layers/blah/macro.value = 10

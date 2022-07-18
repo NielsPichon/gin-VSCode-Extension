@@ -26,6 +26,9 @@ create an issue there. Also feel free to create a pull request with a fix ;)
 
 ## Release Notes
 
+### 0.4.1
+* Fix issue where a % macro would be interpreted as a @ macro when a comma would be added after it.
+
 ### 0.4.0
 * Revamp grammar, getting read of python bindings
 * Add support for multiline lists and tuples

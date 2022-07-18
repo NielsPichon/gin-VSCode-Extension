@@ -4,6 +4,9 @@ All notable changes to the "pink-pepper-gin" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+### [0.4.1]
+- Fix issue where a % macro would be interpreted as a @ macro when a comma would be added after it.
+
 ### [0.4.0]
 
 - Revamp grammar, getting read of python bindings
