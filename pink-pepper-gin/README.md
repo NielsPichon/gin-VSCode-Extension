@@ -27,6 +27,12 @@ create an issue there. Also feel free to create a pull request with a fix ;)
 
 ## Release Notes
 
+### 0.4.2
+* Fix `None` not highlighting.
+* Fix scoped % macros only highlighting first part of the macro.
+* Fix problem with multiple succesive strings where they would all be merged
+as one.
+
 ### 0.4.1
 * Fix issue where a % macro would be interpreted as a @ macro when a comma would
 be added after it.

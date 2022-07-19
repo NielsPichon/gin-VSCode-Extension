@@ -18,6 +18,9 @@
             "include": "#string"
         },
         {
+            "include": "#doublequotedstring"
+        },
+        {
             "include": "#comment"
         },
         {
@@ -60,15 +63,19 @@
             }
         },
 		"string": {
-			"match": "([\\'\"])(.*)?([\\'\"])",
+			"match": "([\\'])([^\\']*)?([\\'])",
 			"name":"string.quoted.gin"
+		},
+		"doublequotedstring": {
+			"match": "([\"])([^\"]*)?([\"])",
+			"name": "string.quoted.double.gin"
 		},
 		"comment": {
 			"match": "#.*",
 			"name": "comment.line.gin"
 		},
 		"bool": {
-			"match": "(False|True)",
+			"match": "(False|True|None)",
 			"name": "variable.language.gin"
 		},
 		"numeric": {
@@ -76,7 +83,7 @@
 			"name": "constant.numeric"
 		},
         "macro2": {
-            "match": "([\\[\\(])?(\\s*)?(%\\w*)([,\\]|\\)])?",
+            "match": "([\\[\\(])?(\\s*)?(%[\\w\\.]*)([,\\]|\\)])?",
             "captures": {
                 "3": {
                     "name": "meta.preprocessor.gin"

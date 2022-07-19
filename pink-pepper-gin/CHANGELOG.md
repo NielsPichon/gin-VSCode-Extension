@@ -4,6 +4,11 @@ All notable changes to the "pink-pepper-gin" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+### [0.4.2]
+- Fix `None` not highlighting.
+- Fix scoped % macros only highlighting first part of the macro.
+- Fix problem with multiple succesive strings where they would all be merged as one.
+
 ### [0.4.1]
 - Fix issue where a % macro would be interpreted as a @ macro when a comma would be added after it.
 

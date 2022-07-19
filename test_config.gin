@@ -8,6 +8,7 @@ AdamOptimizer.beta2 = 0.999
 AdamOptimizer.epsilon = 0.001
 AdamOptimizer.name = 'Adam'
 AdamOptimizer.use_locking = False
+AdamOptimizer.none_arg = None
 
 # Parameters for exponential_decay:
 # ==============================================================================
@@ -36,7 +37,8 @@ my_dict = {
     blah: 0,
     bloh: 12,
     @random: [%whatelse,  %whatelse],
-    @random2: %anything
+    @random2: %anything,
+    "bladder": ['b473f254"-81cf-4a41-95d4-f2d9a476b6b6'],
 }
 
 num_layers/blah/macro.value = 10
@@ -44,3 +46,4 @@ network.num_layers = @num_layers/macro()
 
 num_layers_2 = 10
 network.num_layers = %num_layers_2
+network.num_layers_with_scope = %scope.foo.bar
