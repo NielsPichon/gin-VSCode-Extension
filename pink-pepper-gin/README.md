@@ -3,7 +3,8 @@
 Pink pepper gin is a syntax highlighter for the python config manager gin.
 
 Disclaimer: This is by no means an official package and there is no roadmap
-for bug fixing.
+for bug fixing. But I'll try my best to address issues if you find any. Please
+create an issue in the github repo if you find a bug or have a feature request.
 
 ## Features
 
@@ -27,7 +28,8 @@ create an issue there. Also feel free to create a pull request with a fix ;)
 ## Release Notes
 
 ### 0.4.1
-* Fix issue where a % macro would be interpreted as a @ macro when a comma would be added after it.
+* Fix issue where a % macro would be interpreted as a @ macro when a comma would
+be added after it.
 
 ### 0.4.0
 * Revamp grammar, getting read of python bindings
