@@ -79,7 +79,7 @@
 			"name": "variable.language.gin"
 		},
 		"numeric": {
-			"match": "(\\d*)?(\\.)?(\\d)",
+			"match": "(\\d*)?(\\.)?(\\d)(e(-)?\\d)?",
 			"name": "constant.numeric"
 		},
         "macro2": {

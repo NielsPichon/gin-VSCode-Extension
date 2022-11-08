@@ -27,6 +27,10 @@ create an issue there. Also feel free to create a pull request with a fix ;)
 
 ## Release Notes
 
+
+### 0.4.3
+* Added support for scientific notations
+
 ### 0.4.2
 * Fix `None` not highlighting.
 * Fix scoped % macros only highlighting first part of the macro.

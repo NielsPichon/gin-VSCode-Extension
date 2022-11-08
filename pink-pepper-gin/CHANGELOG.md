@@ -4,6 +4,9 @@ All notable changes to the "pink-pepper-gin" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+### [0.4.3]
+- Added support for scientific notations
+
 ### [0.4.2]
 - Fix `None` not highlighting.
 - Fix scoped % macros only highlighting first part of the macro.
